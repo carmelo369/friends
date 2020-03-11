@@ -22,7 +22,7 @@ app.get("/friends", function(req, res) {
 });
 
 app.post("/addfriend", function(req,res){
-    var newFriend = req.body.newFriend;
+    var newFriend = req.body.newfriend;
     friendList.push(newFriend);
     res.redirect("/friends");
 });
